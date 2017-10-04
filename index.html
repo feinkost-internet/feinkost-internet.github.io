@@ -4,10 +4,20 @@ title: {{ site.name }}
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
+  <h1>Episoden</h1>
+  <div class="posts">
     {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+      <div>
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <p class="meta">{{ post.date | date_to_string }}</p>
+        
+        {% if post.file %}
+          <audio src="{{post.file}}" controls ></audio>
+        {% endif %}
+        
+        {{ post.excerpt }}
+        
+      </div>
     {% endfor %}
-  </ul>
+  </div>
 </div>

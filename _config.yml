@@ -2,7 +2,7 @@
 title:        Feinkost Internet
 tagline:      Just Another Podcast
 baseurl:      ""
-paginate:     1
+# paginate:     1
 
 # About/contact
 author:
