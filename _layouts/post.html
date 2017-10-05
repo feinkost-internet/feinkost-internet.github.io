@@ -2,7 +2,12 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
+<h2>
+  {% if page.file_url %}
+    <i class="fa fa-podcast" aria-hidden="true"></i>
+  {% endif %}
+  {{ page.title }}
+</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
 {% if page.file_url %}

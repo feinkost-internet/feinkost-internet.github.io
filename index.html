@@ -4,19 +4,26 @@ title: {{ site.name }}
 ---
 
 <div id="home">
-  <div class="posts">
-    {% for post in site.posts %}
-      <div>
-        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
-        <p class="meta">{{ post.date | date_to_string }}</p>
+  <div class="pages">
+    {% for page in site.posts %}
+      <div class="page-entry">
+        <h2>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {% if page.file_url %}
+              <i class="fa fa-podcast" aria-hidden="true"></i>
+            {% endif %}
+            {{ page.title }}
+          </a>
+        </h2>
+        <p class="meta">{{ page.date | date_to_string }}</p>
         
-        {% if post.file_url %}
-          <audio src="{{post.file_url}}" controls ></audio>
+        {% if page.file_url %}
+          <audio src="{{page.file_url}}" controls ></audio>
         {% endif %}
         
-        {{ post.excerpt }}
+        {{ page.excerpt }}
         
-        <a href="{{ site.baseurl }}{{ post.url }}">More</a>
+        <a href="{{ site.baseurl }}{{ page.url }}">More</a>
         
       </div>
     {% endfor %}
