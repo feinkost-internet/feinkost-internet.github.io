@@ -24,3 +24,9 @@ include: ["_pages"]
 
 # Podcast
 feed_url: https://feinkost-internet.github.io/feed.rss
+
+header_links:
+  - name: Team
+    url: /team.html
+  - name: Impressum
+    url: /impressum.html

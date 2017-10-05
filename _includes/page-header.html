@@ -6,7 +6,8 @@
   
   <div class="navigation">
     <a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
-    <a href="/impressum.html">Impressum</a>
-    <a href="/team.html">Team</a>
+    {% for link in site.header_links %}
+      <a href="{{link.url}}">{{link.name}}</a>
+    {% endfor %}
   </div>
 </section>
