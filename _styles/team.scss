@@ -1,7 +1,13 @@
 .team-member {
   display: flex;
   margin: 0 0 40px;
-  // justify-content: space-between;
+  
+  .link {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 }
 
 .team-member-picture {
@@ -15,4 +21,5 @@
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
+  overflow: hidden;
 }

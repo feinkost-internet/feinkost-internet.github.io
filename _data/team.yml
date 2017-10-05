@@ -1,4 +1,4 @@
-josa:
+- id: josa
   name: Josa
   picture: https://avatars2.githubusercontent.com/u/423234?v=4&s=460
   links:
@@ -6,7 +6,8 @@ josa:
       url: https://github.com/josa42
     - type: twitter
       url: https://twitter.com/josa_
-robert: 
+
+- id: robert
   name: Robert
   picture: https://avatars3.githubusercontent.com/u/10866968?v=4&s=460
   links:
@@ -14,13 +15,15 @@ robert:
       url: https://github.com/developdude
     - type: twitter
       url: https://twitter.com/developdude
-stefan:
+
+- id: stefan
   name: Stefan
   picture: https://avatars2.githubusercontent.com/u/3154144?v=4&s=460
   links:
     - type: github
       url: https://github.com/Huberst
-thomas:
+
+- id: thomas
   name: Thomas
   picture: https://pbs.twimg.com/profile_images/885601941186908160/uRczpwDO_400x400.jpg
   links:

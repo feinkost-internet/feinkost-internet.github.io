@@ -19,20 +19,8 @@ layout: default
 {% if page.team %}
   <h3>Team</h3>
   
-  {% for member in page.team %}
-    <div class="team-member">
-      <img src="{{site.data.team[member].picture}}" alt="" class="team-member-picture">
-      
-      <div class="team-member-details">
-        {{site.data.team[member].name}}
-        <hr>
-        {% for link in site.data.team[member].links %}
-          <div class="link">
-            <i class="fa fa-{{link.type}}" aria-hidden="true"></i>
-            <a href="{{link.url}}" class="link-{{link.type}}">{{link.url | replace: "https://", "" | replace: "http://", ""}}</a>
-          </div>
-        {% endfor %}
-      </div>
-    </div>
+  {% for id in page.team %}
+    {% assign member = site.data.team | where: "id", id | first %}
+    {% include team-member.html %}
   {% endfor %}
 {% endif %}

@@ -6,18 +6,6 @@ permalink: team.html
 
 
 {% for member in site.data.team %}
-  <div class="team-member">
-    <img src="{{member[1].picture}}" alt="" class="team-member-picture">
-    <div class="team-member-details">
-      {{member[1].name}}
-      <hr>
-      {% for link in member[1].links %}
-        <div class="link">
-          <i class="fa fa-{{link.type}}" aria-hidden="true"></i>
-          <a href="{{link.url}}" class="link-{{link.type}}">{{link.url | replace: "https://", "" | replace: "http://", ""}}</a>
-        </div>
-      {% endfor %}
-    </div>
-  </div>
+  {% include team-member.html %}
 {% endfor %}
 
