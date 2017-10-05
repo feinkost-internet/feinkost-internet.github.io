@@ -5,8 +5,29 @@ layout: default
 <h2>{{ page.title }}</h2>
 <p class="meta">{{ page.date | date_to_string }}</p>
 
-{% if page.file %}
-  <audio src="{{post.file}}" controls ></audio>
+{% if page.file_url %}
+  <audio src="{{page.file_url}}" controls ></audio>
 {% endif %}
 
 {{ content }}
+
+{% if page.team %}
+  <h3>Team</h3>
+  
+  {% for member in page.team %}
+    <div class="team-member">
+      <img src="{{site.data.team[member].picture}}" alt="" class="team-member-picture">
+      
+      <div class="team-member-details">
+        {{site.data.team[member].name}}
+        <hr>
+        {% for link in site.data.team[member].links %}
+          <div class="link">
+            <i class="fa fa-{{link.type}}" aria-hidden="true"></i>
+            <a href="{{link.url}}" class="link-{{link.type}}">{{link.url | replace: "https://", "" | replace: "http://", ""}}</a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+{% endif %}

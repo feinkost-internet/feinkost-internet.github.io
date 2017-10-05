@@ -20,6 +20,7 @@ sass:
 #Others
 markdown: kramdown
 excerpt_separator: <!--more-->
+include: ["_pages"]
 
 # Podcast
 feed_url: https://feinkost-internet.github.io/feed.rss

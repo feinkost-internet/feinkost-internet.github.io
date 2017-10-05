@@ -1,0 +1,18 @@
+.team-member {
+  display: flex;
+  margin: 0 0 40px;
+  // justify-content: space-between;
+}
+
+.team-member-picture {
+  width: 100px;
+  height: 100px;
+  
+  margin: 0 20px 0 0;
+}
+
+.team-member-details {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
