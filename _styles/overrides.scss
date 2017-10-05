@@ -1,19 +1,23 @@
 .page-header {
+  
+  padding: 60px 0 16px;
+  
   @include large {
-    padding: 5rem 0 1rem;
+    height: 288px;
   }
 
   @include medium {
-    padding: 4rem 0 1rem;
+    height: 260px;
   }
 
   @include small {
-    padding: 4rem 0 1rem;
+    height: 243px;
   }
 }
 .navigation {
   
   text-align: left;
+  height: 56px;
   
   a {
     display: inline-block;
