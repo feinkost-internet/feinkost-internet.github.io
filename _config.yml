@@ -6,8 +6,8 @@ baseurl:      ""
 
 # About/contact
 author:
-  name:       Josa Gesell
-  url:        http://yourhomepage.com 
+  name: Feinkost Internet
+  url:  https://feinhost-internet.de
 
 # Gems
 plugins:
@@ -15,3 +15,4 @@ plugins:
 
 #Others
 markdown: kramdown
+excerpt_separator: <!--more-->
