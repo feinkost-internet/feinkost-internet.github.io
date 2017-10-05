@@ -16,3 +16,6 @@ plugins:
 #Others
 markdown: kramdown
 excerpt_separator: <!--more-->
+
+# Podcast
+feed_url: https://feinkost-internet.github.io/feed.rss

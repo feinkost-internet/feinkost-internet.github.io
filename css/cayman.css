@@ -201,3 +201,10 @@ audio {
   display: block;
   margin: 20px 0;
 }
+
+.podlove-subscribe-element {
+  height: 41px;
+  width: 140px;
+
+  margin: 0 auto;
+}
