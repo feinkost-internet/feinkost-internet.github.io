@@ -13,6 +13,10 @@ author:
 plugins:
   - jekyll-paginate
 
+sass:
+  style: compressed
+  sass_dir: _styles
+
 #Others
 markdown: kramdown
 excerpt_separator: <!--more-->
