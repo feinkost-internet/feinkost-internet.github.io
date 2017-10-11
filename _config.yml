@@ -23,11 +23,24 @@ markdown: kramdown
 excerpt_separator: <!--more-->
 include: ["_pages"]
 
-# Podcast
-feed_url: https://feinkost-internet.github.io/feed.rss
-
 header_links:
   - name: Team
     url: /team.html
   - name: Impressum
     url: /impressum.html
+
+# Podcast
+podcast_feed: /feed/podcast.xml
+podcast_language: de-DE
+podcast_album_art: /assets/podcast/cover-v0.jpg
+podcast_title: Feinkost Internet
+podcast_owner: Feinkost Internet
+podcast_email: feinkost.internet@gmail.com
+podcast_category: Technology
+podcast_subcategory_one: Tech News
+podcast_subcategory_two: Gadgets
+podcast_explicit: "no"
+podcast_author: Feinkost Internet
+podcast_description: "Lorem Ipsum"
+podcast_summary: "Lorem Ipsum"
+podcast_subtitle: "Lorem Ipsum"
