@@ -5,11 +5,10 @@
   padding: 0;
   background-image: url(/assets/img/lossy-background.jpg);
   text-align: left;
-  @include large {
-    height: 288px;
-  }
+    @include large {
+      height: 288px;
+    }
 
-<<<<<<< HEAD
     .page-header-wrapper {
       max-width: 64rem;
       padding: 0 6rem;
@@ -24,46 +23,9 @@
 
       img {
         max-width: 625px;
-=======
-  // @include medium {
-  //   background-image: url(/assets/img/header-medium.jpg);
-    
-  //   height: 260px;
-  // }
-
-  @include small {
-    height: 200px;
-  }
-
-  .page-header-wrapper {
-    max-width: 64rem;
-    height: 100%;
-    
-    padding: 0 6rem;
-    margin: 0 auto;
-    font-size: 1.1rem;
-    position: relative;
-
-    @include small {
-      padding: 0 1rem;
-      
-      .project-name {
-        &, a {
-          display: block;
-          max-height: 176px;
-        }
-        
-        a img {
-          object-fit: contain;
-          height: 176px;
-          width: auto;
-          max-width: 100%;
-        }
-        
->>>>>>> 4ba86e8a41f631cc63afa00110a91d18e0b5960f
       }
     }
-    
+  
     @include medium {
       padding: 0 4rem;
     }
@@ -71,7 +33,6 @@
     img {
       max-width: 625px;
     }
-  }
 }
 .navigation {
   position: absolute;
@@ -156,11 +117,10 @@ audio {
 
 .about {
   font-family: 'Caveat';
-  font-size: 18px;
-  padding: 20px 20px 40px 20px;
+  font-size: 20px;
+  padding: 0 0 20px 0;
   display: block;
-  line-height: 1.5;
-  text-align:center;
+  line-height: 1.7;
 }
 
 .show-mobile {

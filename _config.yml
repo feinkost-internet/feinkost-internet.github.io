@@ -28,6 +28,8 @@ header_links:
     url: /
   - name: Team
     url: /team.html
+  - name: Über uns
+    url: /ueber-uns.html
   - name: Impressum
     url: /impressum.html
 
