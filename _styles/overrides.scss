@@ -4,19 +4,9 @@
   background-color: transparent;
   padding: 0;
   background-image: url(/assets/img/lossy-background.jpg);
-  
+  text-align: left;
   @include large {
     height: 288px;
-  }
-
-  // @include medium {
-  //   background-image: url(/assets/img/header-medium.jpg);
-    
-  //   height: 260px;
-  // }
-
-  @include small {
-    height: 200px;
   }
 
     .page-header-wrapper {
@@ -27,7 +17,8 @@
       position: relative;
 
       @include small {
-        padding: 0;
+        padding: 0 20px 10px 20px;
+        max-width: 329px;
       }
 
       img {
@@ -62,6 +53,9 @@
 
   @include small {
     font-size: 1rem;
+    padding: 10px;
+    position: relative;
+    text-align: center;
   }
 }
 
@@ -82,8 +76,9 @@ audio {
 
 .podlove-subscribe-element {
   position: absolute;
-  top: 15px;
-  right: 15px;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
   
   height: 41px;
   width: 140px;
@@ -98,8 +93,11 @@ audio {
   }
 
   @include small {
-    top: 5px;
-    right: 5px;
+    top: 0;
+    right: 0;
+    position: relative;
+    margin: 5px 15px;
+    float: right;
   }
 }
 
@@ -109,9 +107,25 @@ audio {
 
 .about {
   font-family: 'Caveat';
-  font-size: 16px;
+  font-size: 18px;
   padding: 20px 20px 40px 20px;
   display: block;
   line-height: 1.5;
   text-align:center;
+}
+
+.show-mobile {
+  display: none;
+}
+
+.show-mobile {
+  @include small {
+    display: block;
+  }
+}
+
+.hide-mobile {
+  @include small {
+    display: none;
+  }
 }
