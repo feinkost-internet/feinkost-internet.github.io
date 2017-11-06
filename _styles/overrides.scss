@@ -1,44 +1,66 @@
 .page-header {
-  
-  padding: 60px 0 16px;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: transparent;
+  padding: 0;
+  background-image: url(/assets/img/lossy-background.jpg);
   
   @include large {
     height: 288px;
   }
 
-  @include medium {
-    height: 260px;
-  }
+  // @include medium {
+  //   background-image: url(/assets/img/header-medium.jpg);
+    
+  //   height: 260px;
+  // }
 
   @include small {
-    height: 243px;
+    height: 200px;
   }
+
+    .page-header-wrapper {
+      max-width: 64rem;
+      padding: 0 6rem;
+      margin: 0 auto;
+      font-size: 1.1rem;
+      position: relative;
+
+      @include small {
+        padding: 0;
+      }
+
+      img {
+        max-width: 625px;
+      }
+
+    }
+
 }
 .navigation {
-  
+  position: absolute;
   text-align: left;
-  height: 56px;
+  bottom: 0;
   
   a {
     display: inline-block;
     margin: 0 15px 0 0; 
-    
+    font-size: 13px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     color: white;
   }
   
   @include large {
     max-width: 64rem;
-    padding: 2rem 6rem 0;
     margin: 0 auto;
   }
 
   @include medium {
-    padding: 2rem 4rem  0;
     font-size: 1.1rem;
   }
 
   @include small {
-    padding: 2rem 1rem  0;
     font-size: 1rem;
   }
 }
@@ -83,4 +105,13 @@ audio {
 
 .page-entry {
   margin-bottom: 5rem;
+}
+
+.about {
+  font-family: 'Caveat';
+  font-size: 16px;
+  padding: 20px 20px 40px 20px;
+  display: block;
+  line-height: 1.5;
+  text-align:center;
 }
