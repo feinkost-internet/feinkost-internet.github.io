@@ -19,23 +19,42 @@
     height: 200px;
   }
 
-    .page-header-wrapper {
-      max-width: 64rem;
-      padding: 0 6rem;
-      margin: 0 auto;
-      font-size: 1.1rem;
-      position: relative;
+  .page-header-wrapper {
+    max-width: 64rem;
+    height: 100%;
+    
+    padding: 0 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    position: relative;
 
-      @include small {
-        padding: 0;
+    @include small {
+      padding: 0 1rem;
+      
+      .project-name {
+        &, a {
+          display: block;
+          max-height: 176px;
+        }
+        
+        a img {
+          object-fit: contain;
+          height: 176px;
+          width: auto;
+          max-width: 100%;
+        }
+        
       }
-
-      img {
-        max-width: 625px;
-      }
-
+    }
+    
+    @include medium {
+      padding: 0 4rem;
     }
 
+    img {
+      max-width: 625px;
+    }
+  }
 }
 .navigation {
   position: absolute;
@@ -63,6 +82,10 @@
   @include small {
     font-size: 1rem;
   }
+}
+
+h1 {
+  text-align: left;
 }
 
 h1 a, h1 a:hover, h1 a:active {
