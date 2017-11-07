@@ -18,9 +18,10 @@ layout: default
 
 {% if page.team %}
   <h3>Team</h3>
-  
-  {% for id in page.team %}
-    {% assign member = site.data.team | where: "id", id | first %}
-    {% include team-member.html %}
-  {% endfor %}
+  <div class="team-members">
+    {% for id in page.team %}
+      {% assign member = site.data.team | where: "id", id | first %}
+      {% include team-member.html %}
+    {% endfor %}
+  </div>
 {% endif %}

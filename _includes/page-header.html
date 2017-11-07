@@ -8,11 +8,12 @@
           <img src="/assets/img/header-logo-mobile.png" class="show-mobile" alt="{{ site.title }}" width="100%">
         </a>
       </h1>
-      
-      <div class="navigation">
-        {% for link in site.header_links %}
-          <a href="{{link.url}}">{{link.name}}</a>
-        {% endfor %}
-      </div>
+  </div>
+</section>
+<section class="navigation">
+  <div class="navigation-wrapper">
+      {% for link in site.header_links %}
+      <a href="{{link.url}}">{{link.name}}</a>
+    {% endfor %}
   </div>
 </section>

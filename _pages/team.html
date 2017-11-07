@@ -5,7 +5,8 @@ permalink: team.html
 ---
 
 
-{% for member in site.data.team %}
-  {% include team-member.html %}
-{% endfor %}
-
+<div class="team-members">
+  {% for member in site.data.team %}
+    {% include team-member.html %}
+  {% endfor %}
+</div>

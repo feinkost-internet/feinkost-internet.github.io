@@ -4,21 +4,29 @@
   background-color: transparent;
   padding: 0;
   background-image: url(/assets/img/lossy-background.jpg);
-  text-align: left;
+  position: relative;
     @include large {
-      height: 288px;
+      height: 260px;
     }
 
     .page-header-wrapper {
       max-width: 64rem;
       padding: 0 6rem;
       margin: 0 auto;
-      font-size: 1.1rem;
+      font-size: 14px;
       position: relative;
 
       @include small {
-        padding: 0 20px 10px 20px;
+        padding: 0 50px 10px 50px;
         max-width: 329px;
+      }
+
+      .project-name {
+        margin-bottom: 0;
+
+        a {
+          display: block;
+        }
       }
 
       img {
@@ -34,34 +42,69 @@
       max-width: 625px;
     }
 }
+
+.main-content {
+  font-size: 14px;
+  p {
+    font-size: 14px;
+  }
+  hr {
+    margin: 25px 0;
+    height: 1px;
+  }
+}
+
 .navigation {
-  position: absolute;
-  text-align: left;
-  bottom: 0;
+  background-image: url(/assets/img/lossy-background.jpg);
+  background-position: bottom left;
+  background-size: cover;  
+  box-shadow: 0 0 0 #f00;
   
-  a {
-    display: inline-block;
-    margin: 0 15px 0 0; 
-    font-size: 13px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: white;
-  }
-  
-  @include large {
-    max-width: 64rem;
-    margin: 0 auto;
-  }
-
-  @include medium {
-    font-size: 1.1rem;
-  }
-
-  @include small {
-    font-size: 1rem;
-    padding: 10px;
+  .navigation-wrapper {
     position: relative;
-    text-align: center;
+    max-width: 64rem;
+    padding: 0 6rem;
+    margin: 0 auto;
+    text-align: left;
+
+    @include medium {
+      padding: 0 4rem;
+    }
+    
+    a {
+      display: inline-block;
+      margin: 0 15px 0 0; 
+      padding: 5px 0;
+      font-size: 13px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: white;
+      border-top: 2px solid transparent; 
+      transition: border .15s ease-in-out;
+
+      &:hover {
+        text-decoration: none;
+        border-top: 2px solid transparentize($header-heading-color, .5);
+        transition: border .15s ease-in-out;
+      }
+
+      @include small {
+        margin: 0 5px 0 0;
+        letter-spacing: initial;
+      }
+    }
+    
+    @include large {
+      max-width: 64rem;
+      margin: 0 auto;
+    }
+
+    @include small {
+      font-size: 14px;
+      padding: 10px;
+      position: relative;
+      text-align: center;
+    }
   }
 }
 
@@ -80,6 +123,7 @@ h2 a, h2 a:hover, h2 a:active {
 }
 
 audio {
+  width: 100%;
   display: block;
   margin: 20px 0;
 }
@@ -112,7 +156,43 @@ audio {
 }
 
 .page-entry {
-  margin-bottom: 5rem;
+  margin-bottom: 0;
+  padding-left: 25px;
+  position: relative;
+
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    a {     
+      i {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        margin-right: 5px;
+        opacity: .5;
+        width: 15px;
+        color: $body-text-color; 
+
+        &.rotate-45-cw {
+          transform: rotate(45deg);
+        }
+      }
+      .meta {
+        font-size: 12px;
+        color: $body-text-color;
+        text-transform: initial;
+      }
+    }
+  }
+
+  .read-more {
+    font-size: 14px;
+  }
+}
+
+.site-footer {
+  border-top: none;
 }
 
 .about {
