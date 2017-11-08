@@ -1,7 +1,7 @@
 .page-header {
   background-size: cover;
   background-position: 50% 50%;
-  background-color: transparent;
+  background-color: $header-bg-color;
   padding: 0;
   background-image: url(/assets/img/lossy-background.jpg);
   position: relative;
