@@ -26,8 +26,6 @@ include: ["_pages"]
 header_links:
   - name: Episoden
     url: /
-  - name: Team
-    url: /team.html
   - name: Über uns
     url: /ueber-uns.html
   - name: Impressum
