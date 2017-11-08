@@ -11,11 +11,15 @@ title: {{ site.name }}
           <a href="{{ site.baseurl }}{{ page.url }}">
             {% if page.file_url %}
               <i class="fa fa-podcast" aria-hidden="true"></i>
+            {% else %}
+              <i class="fa fa-microchip rotate-45-cw" aria-hidden="true"></i>
             {% endif %}
-            {{ page.title }}
+            <span>
+                {{ page.title }}
+                <p class="meta">{{ page.date | date_to_string }}</p>
+            </span>
           </a>
         </h2>
-        <p class="meta">{{ page.date | date_to_string }}</p>
         
         {% if page.file_url %}
           <audio src="{{page.file_url}}" controls ></audio>
@@ -23,8 +27,8 @@ title: {{ site.name }}
         
         {{ page.excerpt }}
         
-        <a href="{{ site.baseurl }}{{ page.url }}">More</a>
-        
+        <a href="{{ site.baseurl }}{{ page.url }}" class="read-more">Mehr</a>
+        <hr>
       </div>
     {% endfor %}
   </div>

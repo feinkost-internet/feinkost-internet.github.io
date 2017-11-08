@@ -1,12 +1,18 @@
 <section class="page-header">
-  <h1 class="project-name"><a href="{{ site.url }}">{{ site.title }}</a></h1>
-  <h2 class="project-tagline">{{ site.tagline }}</h2>
-  
   {% include subscribe-button.html %}
   
-  <div class="navigation">
-    <a href="/"><i class="fa fa-home" aria-hidden="true"></i></a>
-    {% for link in site.header_links %}
+  <div class="page-header-wrapper">
+    <h1 class="project-name">
+        <a href="{{ site.url }}">
+          <img src="/assets/img/header-logo.png" class="hide-mobile" alt="{{ site.title }}" width="100%">
+          <img src="/assets/img/header-logo-mobile.png" class="show-mobile" alt="{{ site.title }}" width="100%">
+        </a>
+      </h1>
+  </div>
+</section>
+<section class="navigation">
+  <div class="navigation-wrapper">
+      {% for link in site.header_links %}
       <a href="{{link.url}}">{{link.name}}</a>
     {% endfor %}
   </div>

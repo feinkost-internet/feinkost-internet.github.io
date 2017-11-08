@@ -1,15 +1,17 @@
 {% if member %}
   <div class="team-member">
-    <img src="{{member.picture}}" alt="" class="team-member-picture">
-    <div class="team-member-details">
+    <div class="team-member-wrapper">
+      <div class="team-member-picture" style="background-image:url({{member.picture}});"></div>
       {{member.name}}
-      <hr>
-      {% for link in member.links %}
-        <div class="link">
-          <i class="fa fa-{{link.type}}" aria-hidden="true"></i>
-          <a href="{{link.url}}" class="link-{{link.type}}">{{link.url | replace: "https://", "" | replace: "http://", ""}}</a>
-        </div>
-      {% endfor %}
+      <div class="team-member-details">
+        <hr>
+        {% for link in member.links %}
+          <div class="link">
+            <i class="fa fa-{{link.type}}" aria-hidden="true"></i>
+            <a href="{{link.url}}" class="link-{{link.type}}">{{link.url | replace: "https://", "" | replace: "http://", ""}}</a>
+          </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
 {% endif %}

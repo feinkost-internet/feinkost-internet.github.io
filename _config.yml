@@ -24,8 +24,10 @@ excerpt_separator: <!--more-->
 include: ["_pages"]
 
 header_links:
-  - name: Team
-    url: /team.html
+  - name: Episoden
+    url: /
+  - name: Über uns
+    url: /ueber-uns.html
   - name: Impressum
     url: /impressum.html
 
