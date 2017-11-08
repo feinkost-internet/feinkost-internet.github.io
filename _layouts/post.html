@@ -1,27 +1,34 @@
 ---
 layout: default
 ---
+<div class="page-entry">
+  <h2>
+    <a href="{{ site.baseurl }}{{ page.url }}">
+      {% if page.file_url %}
+        <i class="fa fa-podcast" aria-hidden="true"></i>
+      {% else %}
+        <i class="fa fa-microchip rotate-45-cw" aria-hidden="true"></i>
+      {% endif %}
+      <span>
+          {{ page.title }}
+          <p class="meta">{{ page.date | date_to_string }}</p>
+      </span>
+    </a>
+  </h2>
 
-<h2>
   {% if page.file_url %}
-    <i class="fa fa-podcast" aria-hidden="true"></i>
+    <audio src="{{page.file_url}}" controls ></audio>
   {% endif %}
-  {{ page.title }}
-</h2>
-<p class="meta">{{ page.date | date_to_string }}</p>
 
-{% if page.file_url %}
-  <audio src="{{page.file_url}}" controls ></audio>
-{% endif %}
+  {{ content }}
 
-{{ content }}
-
-{% if page.team %}
-  <h3>Team</h3>
-  <div class="team-members">
-    {% for id in page.team %}
-      {% assign member = site.data.team | where: "id", id | first %}
-      {% include team-member.html %}
-    {% endfor %}
-  </div>
-{% endif %}
+  {% if page.team %}
+    <h3>Team</h3>
+    <div class="team-members">
+      {% for id in page.team %}
+        {% assign member = site.data.team | where: "id", id | first %}
+        {% include team-member.html %}
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
