@@ -1,0 +1,6 @@
+---
+layout: null
+sitemap: false
+---
+User-agent: *
+Disallow: /impressum.html
