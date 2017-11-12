@@ -36,7 +36,7 @@ header_links:
 # Podcast
 podcast_feed: /feed/podcast.xml
 podcast_language: de-DE
-podcast_album_art: /assets/podcast/cover-v0.jpg
+podcast_album_art: /assets/img/logo.jpg
 podcast_title: Feinkost Internet
 podcast_owner: Feinkost Internet
 podcast_email: feinkost.internet@gmail.com
