@@ -25,6 +25,8 @@ GEM
     jekyll-paginate (1.1.0)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
+    jekyll-seo-tag (2.3.0)
+      jekyll (~> 3.3)
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     kramdown (1.15.0)
@@ -59,6 +61,7 @@ DEPENDENCIES
   jekyll
   jekyll-cayman-theme!
   jekyll-paginate
+  jekyll-seo-tag
   kramdown
   pygments.rb
   rake (~> 10.0)
