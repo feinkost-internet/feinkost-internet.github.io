@@ -53,7 +53,13 @@ podcast_subtitle: "Lorem Ipsum"
 twitter:
   username: ""
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/logo.jpg
+
 # SEO
-logo: "assets/img/logo.jpg"
+logo: "/assets/img/logo.jpg"
 webmaster_verifications:
   google: 1234
