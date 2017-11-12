@@ -25,9 +25,7 @@ title: {{ site.name }}
           <audio src="{{page.file_url}}" controls ></audio>
         {% endif %}
         
-        {{ page.excerpt }}
-        
-        <a href="{{ site.baseurl }}{{ page.url }}" class="read-more">Mehr</a>
+        {{ page.content }}
         <hr>
       </div>
     {% endfor %}
