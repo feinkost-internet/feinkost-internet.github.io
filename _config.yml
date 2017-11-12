@@ -3,13 +3,13 @@ title:        Feinkost Internet
 tagline:      Just Another Podcast
 description:  ""
 baseurl:      ""
-url:          "http://feinhost-internet.de"
+url:          "http://www.feinkost-internet.de"
 # paginate:     1
 
 # About/contact
 author:
   name: Feinkost Internet
-  url:  http://feinhost-internet.de
+  url:  http://www.feinkost-internet.de
 
 # Gems
 plugins:
