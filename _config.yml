@@ -2,17 +2,19 @@
 title:        Feinkost Internet
 tagline:      Just Another Podcast
 description:  ""
-baseurl:      ""
+baseurl:      "http://feinhost-internet.de"
+url:          "http://feinhost-internet.de"
 # paginate:     1
 
 # About/contact
 author:
   name: Feinkost Internet
-  url:  https://feinhost-internet.de
+  url:  http://feinhost-internet.de
 
 # Gems
 plugins:
   - jekyll-paginate
+  - jekyll-seo-tag
 
 sass:
   style: compressed
@@ -46,3 +48,12 @@ podcast_author: Feinkost Internet
 podcast_description: "Lorem Ipsum"
 podcast_summary: "Lorem Ipsum"
 podcast_subtitle: "Lorem Ipsum"
+
+# Social Media
+twitter:
+  username: ""
+
+# SEO
+logo: "assets/img/logo.jpg"
+webmaster_verifications:
+  google: 1234
