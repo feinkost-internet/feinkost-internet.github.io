@@ -54,9 +54,7 @@ podcast_categories:
       - name: Tech News
 podcast_explicit: "no"
 podcast_author: Feinkost Internet
-podcast_description: "Lorem Ipsum"
-podcast_summary: "Lorem Ipsum"
-podcast_subtitle: "Lorem Ipsum"
+podcast_subtitle: "Letzte Feinkost vor dem Internet"
 
 # Social Media
 twitter:
