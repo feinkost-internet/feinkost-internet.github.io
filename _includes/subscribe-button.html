@@ -6,7 +6,7 @@
       "description":"{{ site.description }}",
       "cover":"{{ site.podcast_album_art }}",
       "feeds":[
-        { "type":"audio","format":"mp3","url":"{ site.url }}{{ podcast_feed }}" }
+        { "type":"audio","format":"mp3","url":"{{ site.podcast_feed_url }}" }
       ]
     }
   </script>
@@ -18,5 +18,5 @@
     data-format="rectangle"
     data-style="outline">
   </script>
-  <noscript><a href="{ site.url }}{{ podcast_feed }}">Subscribe to feed</a></noscript>
+  <noscript><a href="{{ podcast_feed_url }}">Subscribe to feed</a></noscript>
 </div>
