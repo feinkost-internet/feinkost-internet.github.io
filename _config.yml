@@ -15,6 +15,7 @@ url:          "http://www.feinkost-internet.de"
 # About/contact
 author:
   name: Feinkost Internet
+  email: feinkost.internet@gmail.com
   url:  http://www.feinkost-internet.de
 
 # Gems
@@ -25,6 +26,8 @@ plugins:
 sass:
   style: compressed
   sass_dir: _styles
+
+lang: de_DE
 
 #Others
 markdown: kramdown
@@ -44,8 +47,6 @@ podcast_feed: /feed/podcast.xml
 podcast_language: de-DE
 podcast_album_art: /assets/img/logo-3000x3000.jpg
 podcast_title: Feinkost Internet
-podcast_owner: Feinkost Internet
-podcast_email: feinkost.internet@gmail.com
 
 podcast_categories:
   - name: Comedy
@@ -53,12 +54,11 @@ podcast_categories:
     sub_categories:
       - name: Tech News
 podcast_explicit: "no"
-podcast_author: Feinkost Internet
 podcast_subtitle: "Letzte Feinkost vor dem Internet"
 
 # Social Media
-twitter:
-  username: ""
+# twitter:
+#   username: ""
 
 defaults:
   - scope:
@@ -68,5 +68,5 @@ defaults:
 
 # SEO
 logo: "/assets/img/logo.jpg"
-webmaster_verifications:
-  google: 1234
+# webmaster_verifications:
+#   google: 1234

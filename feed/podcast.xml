@@ -24,14 +24,14 @@ layout: null
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>http://jekyllrb.com</generator>
     <itunes:summary>{{ site.description }}</itunes:summary>
-    <itunes:author>{{ site.podcast_author }}</itunes:author>
+    <itunes:author>{{ site.author.name }}</itunes:author>
     <itunes:explicit>{{ site.podcast_explicit }}</itunes:explicit>
     <itunes:image href="{{ site.url }}{{ site.podcast_album_art }}"/>
     <itunes:owner>
-      <itunes:name>{{ site.podcast_owner }}</itunes:name>
-      <itunes:email>{{ site.podcast_email }}</itunes:email>
+      <itunes:name>{{ site.author.name }}</itunes:name>
+      <itunes:email>{{ site.author.email }}</itunes:email>
     </itunes:owner>
-    <managingEditor>{{ site.podcast_email }} ({{ site.podcast_owner }})</managingEditor>
+    <managingEditor>{{ site.author.email }} ({{ site.author.name }})</managingEditor>
     <itunes:subtitle>{{ site.podcast_subtitle }}</itunes:subtitle>
     <image>
       <title>{{ site.podcast_title }}</title>
@@ -83,7 +83,7 @@ layout: null
         <itunes:summary>
           <![CDATA[{{ episode.content | expand_urls: site.url | cdata_escape }}]]>
         </itunes:summary>
-        <itunes:author>{{ site.podcast_author }}</itunes:author>
+        <itunes:author>{{ site.author.name }}</itunes:author>
         <itunes:image href="{{ site.url }}{{ site.podcast_album_art }}"/>
         <itunes:explicit>{{ site.podcast_explicit }}</itunes:explicit>
         <itunes:duration>{{ episode.file_duration }}</itunes:duration>
