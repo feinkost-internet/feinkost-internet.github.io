@@ -38,10 +38,14 @@ layout: null
       <url>{{ site.url }}{{ site.podcast_album_art }}</url>
       <link>{{ site.url }}</link>
     </image>
-    <itunes:category text="{{ site.podcast_category }}">
-      <itunes:category text="{{ site.podcast_subcategory_one }}"/>
-      <itunes:category text="{{ site.podcast_subcategory_two }}"/>
-    </itunes:category>
+    {% for category in site.podcast_categories %}
+      <itunes:category text="{{ category.name }}">
+        {% for sub_category in category.sub_categories %}
+          <itunes:category text="{{ sub_category.name }}"/>
+        {% endfor %}
+      </itunes:category>
+    {% endfor %}
+    
     {% for episode in site.categories.podcast %}
       <item>
         <title>{{ episode.title }}</title>

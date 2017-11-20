@@ -40,9 +40,12 @@ podcast_album_art: /assets/img/logo.jpg
 podcast_title: Feinkost Internet
 podcast_owner: Feinkost Internet
 podcast_email: feinkost.internet@gmail.com
-podcast_category: Technology
-podcast_subcategory_one: Tech News
-podcast_subcategory_two: Gadgets
+
+podcast_categories:
+  - name: Comedy
+  - name: Technology
+    sub_categories:
+      - name: Tech News
 podcast_explicit: "no"
 podcast_author: Feinkost Internet
 podcast_description: "Lorem Ipsum"
