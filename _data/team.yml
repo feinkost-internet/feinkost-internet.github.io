@@ -1,6 +1,6 @@
 - id: josa
   name: Josa
-  picture: https://avatars2.githubusercontent.com/u/423234?v=4&s=460
+  picture: /assets/img/team/josa.jpg
   links:
     - type: github
       url: https://github.com/josa42
@@ -9,7 +9,7 @@
 
 - id: robert
   name: Robert
-  picture: https://avatars3.githubusercontent.com/u/10866968?v=4&s=460
+  picture: /assets/img/team/robert.jpg
   links:
     - type: github
       url: https://github.com/developdude
@@ -18,14 +18,14 @@
 
 - id: stefan
   name: Stefan
-  picture: https://avatars2.githubusercontent.com/u/3154144?v=4&s=460
+  picture: /assets/img/team/stefan.png
   links:
     - type: github
       url: https://github.com/Huberst
 
 - id: thomas
   name: Thomas
-  picture: https://pbs.twimg.com/profile_images/885601941186908160/uRczpwDO_400x400.jpg
+  picture: /assets/img/team/thomas.jpg
   links:
     - type: github
       url: https://github.com/t-sauer
