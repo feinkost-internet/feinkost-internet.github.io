@@ -43,7 +43,7 @@ header_links:
     url: /impressum.html
 
 # Podcast
-podcast_feed_url: "https://feinkost-internet.de/feed/podcast.xml"
+podcast_feed_url: "http://feinkost-internet.de/feed/podcast.xml"
 podcast_language: de-DE
 podcast_album_art: /assets/img/logo-3000x3000.jpg
 podcast_title: Feinkost Internet
