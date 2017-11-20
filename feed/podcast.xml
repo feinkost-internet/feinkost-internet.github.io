@@ -17,13 +17,13 @@ layout: null
     <title>{{ site.podcast_title }}</title>
     <atom:link href="{{ site.url }}{{ podcast_feed }}" rel="self" type="application/rss+xml"/>
     <link>{{ site.url }}</link>
-    <description>{{ site.podcast_description }}</description>
+    <description>{{ site.description }}</description>
     <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %H:%M:%S %z" }}</lastBuildDate>
     <language>{{ site.podcast_language }}</language>
     <sy:updatePeriod>hourly</sy:updatePeriod>
     <sy:updateFrequency>1</sy:updateFrequency>
     <generator>http://jekyllrb.com</generator>
-    <itunes:summary>{{ site.podcast_summary }}</itunes:summary>
+    <itunes:summary>{{ site.description }}</itunes:summary>
     <itunes:author>{{ site.podcast_author }}</itunes:author>
     <itunes:explicit>{{ site.podcast_explicit }}</itunes:explicit>
     <itunes:image href="{{ site.url }}{{ site.podcast_album_art }}"/>
