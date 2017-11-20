@@ -11,7 +11,7 @@ layout: default
       {% endif %}
       <span>
           {{ page.title }}
-          <p class="meta">{{ page.date | date_to_string }}, geschrieben von {{ page.author }}</p>
+          <p class="meta">{{ page.date | date_to_string }}{% if page.author %}, geschrieben von {{ page.author }}{% endif %}</p>
       </span>
     </a>
   </h2>
