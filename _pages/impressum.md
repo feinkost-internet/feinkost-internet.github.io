@@ -27,7 +27,7 @@ den Cookie erzeugten Informationen über Ihre Benutzung dieser Website werden in
 Server von Google in den USA übertragen und dort gespeichert.
 
 Mehr Informationen zum Umgang mit Nutzerdaten bei Google Analytics finden Sie in der
-Datenschutzerklärung von Google: <https://support.google.com/analytics/answer/6004245?hl=de
+Datenschutzerklärung von Google: <https://support.google.com/analytics/answer/6004245?hl=de>
 
 **Browser Plugin**
 
