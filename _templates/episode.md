@@ -2,7 +2,7 @@
 layout: post
 category: podcast
 title:  "FKI000 <title>"
-date:   2017-10-04 21:00:00
+date:   2017-10-04 21:00:00+01:00
 file_url: http://www.sample-videos.com/audio/mp3/crowd-cheering.mp3
 file_duration: "00:00:00" # HH:MM:SS
 file_size: 0              # bytes
