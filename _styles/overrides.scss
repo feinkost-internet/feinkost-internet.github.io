@@ -120,6 +120,25 @@
         margin: 0 5px 0 0;
         letter-spacing: initial;
       }
+
+      &.twitter {
+        float: right;
+        padding-left: 25px;
+        position: relative;
+        font-weight: 200;
+
+        i {
+          position: absolute;
+          left: 0;
+          font-size: 20px;
+        }
+
+        &:before {
+          position: absolute;
+          font-size: 20px;
+        }
+
+      }
     }
     
     @include large {
