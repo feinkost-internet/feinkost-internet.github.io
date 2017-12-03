@@ -17,7 +17,7 @@ layout: default
   </h2>
 
   {% if page.file_url %}
-    <audio src="{{page.file_url}}" controls preload="metadata"></audio>
+    <audio src="{{page.file_url}}" controls preload="none"></audio>
   {% endif %}
 
   {{ content }}
