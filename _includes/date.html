@@ -1,0 +1,4 @@
+{{ include.date | date: "%-d" }}.
+{% assign m = include.date | date: "%-m" %}
+{% include date-month.html month=m %}
+{{ include.date | date: "%Y" }}

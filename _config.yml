@@ -39,6 +39,8 @@ header_links:
     url: /
   - name: Über uns
     url: /ueber-uns.html
+  - name: Archiv
+    url: /archiv.html
   - name: Impressum
     url: /impressum.html
 

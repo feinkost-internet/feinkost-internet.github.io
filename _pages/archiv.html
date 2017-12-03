@@ -1,0 +1,34 @@
+---
+layout: page
+title:  "Archiv"
+permalink: archiv.html
+---
+
+{% assign postsByYear = site.categories.podcast | group_by_exp:"post", "post.date | date: '%Y'"  %}
+
+{% for year in postsByYear %}
+  <h3>{{ year.name }}</h3>
+  
+  {% assign postsByMonth = year.items | group_by_exp:"post", "post.date  | date: '%-m'"  %}
+  
+  {% for month in postsByMonth %}
+  
+    <h4>{% include date-month.html month=month.name %}</h4>
+  
+    <ul class="archive">
+      {% for post in month.items %}
+        <li>
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            <i class="fa fa-podcast" aria-hidden="true"></i>
+            <div>
+                {{ post.title }}
+                <p class="meta">
+                  {%- include date.html date=post.date -%}
+                </p>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endfor %}
+{% endfor %}
