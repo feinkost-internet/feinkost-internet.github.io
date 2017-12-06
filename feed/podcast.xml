@@ -45,7 +45,7 @@ layout: null
         {% endfor %}
       </itunes:category>
     {% endfor %}
-    
+
     {% for episode in site.categories.podcast %}
       <item>
         <title>{{ episode.title }}</title>
@@ -65,9 +65,9 @@ layout: null
             <![CDATA[{{ category | cdata_escape }}]]>
           </category>
         {% endfor %}
-        <guid isPermaLink="{% if episode.podcast_guid %}false{% else %}true{% endif %}">{{ site.url }}
-          {% if episode.podcast_guid %}/{{ episode.podcast_guid }}
-          {% else %}{{ episode.url }}{% endif %}
+        <guid isPermaLink="{% if episode.podcast_guid %}false{% else %}true{% endif %}">{{- site.url -}}
+          {%- if episode.podcast_guid -%}/{{- episode.podcast_guid -}}
+          {%- else -%}{{- episode.url -}}{%- endif -%}
         </guid>
         <description>
           <![CDATA[{{ episode.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
