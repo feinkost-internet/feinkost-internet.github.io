@@ -1,4 +1,14 @@
-{{ include.date | date: "%-d" }}.
-{% assign m = include.date | date: "%-m" %}
-{% include date-month.html month=m %}
-{{ include.date | date: "%Y" }}
+{{- include.date | date_to_long_string
+  | replace: 'January',   'Januar'
+  | replace: 'February',  'Februar'
+  | replace: 'March',     'März'
+  | replace: 'April',     'April'
+  | replace: 'May',       'Mai'
+  | replace: 'June',      'Juni'
+  | replace: 'July',      'Juli'
+  | replace: 'August',    'August'
+  | replace: 'September', 'September'
+  | replace: 'October',   'Oktober'
+  | replace: 'November',  'November'
+  | replace: 'December',  'Dezember'
+-}}
