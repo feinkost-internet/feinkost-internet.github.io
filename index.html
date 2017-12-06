@@ -4,28 +4,31 @@ title: Feinkost Internet - Handgesprochene Podcasts, saftiges Internet direkt vo
 ---
 
 <div id="home">
-  <div class="pages">
-    {% for page in site.posts %}
+  <div class="posts">
+    {% for post in site.posts %}
       <div class="page-entry">
         <h2>
-          <a href="{{ site.baseurl }}{{ page.url }}">
-            {% if page.file_url %}
+          <a href="{{ site.baseurl }}{{ post.url }}">
+            {% if post.file_url %}
               <i class="fa fa-podcast" aria-hidden="true"></i>
             {% else %}
               <i class="fa fa-microchip rotate-45-cw" aria-hidden="true"></i>
             {% endif %}
             <span>
-                {{ page.title }}
-                <p class="meta">{{ page.date | date_to_string }}{% if page.author %}, geschrieben von {{ page.author }}{% endif %}</p>
+                {{ post.title }}
+                <p class="meta">
+                  {%- include date.html date=post.date -%}
+                  {%- if post.author %}, geschrieben von {{ post.author }}{% endif -%}
+                </p>
             </span>
           </a>
         </h2>
-        
-        {% if page.file_url %}
-          <audio src="{{page.file_url}}" controls preload="none"></audio>
+
+        {% if post.file_url %}
+          <audio src="{{post.file_url}}" controls preload="none"></audio>
         {% endif %}
-        
-        {{ page.content }}
+
+        {{ post.content }}
         <hr>
       </div>
     {% endfor %}
