@@ -1,5 +1,6 @@
 .team-members {
   display: flex;
+  margin-bottom: 25px;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -32,7 +33,7 @@
     .team-member-wrapper {
       width: 100%;
     }
-    
+
     .link {
       width: 100%;
       margin-bottom: 5px;
