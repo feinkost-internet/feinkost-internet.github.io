@@ -45,6 +45,20 @@
 
 .main-content {
   font-size: 14px;
+
+  .posts {
+
+    .page-entry {
+      padding-left: 0;
+      
+      h2 {
+        @include small {
+          padding-left: 25px;
+        } 
+      }
+      
+    }
+  }
   
   h2 {
     font-size: 18px;
