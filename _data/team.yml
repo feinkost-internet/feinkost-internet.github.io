@@ -25,7 +25,7 @@
 
 - id: thomas
   name: Thomas
-  picture: /assets/img/team/thomas.jpg
+  picture: /assets/img/team/thomas-v2.jpg
   links:
     - type: github
       url: https://github.com/t-sauer
