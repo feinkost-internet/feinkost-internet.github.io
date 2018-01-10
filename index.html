@@ -25,7 +25,7 @@ title: Feinkost Internet - Handgesprochene Podcasts, saftiges Internet direkt vo
         </h2>
 
         {% if post.file_url %}
-          <audio src="{{post.file_url}}" controls preload="none"></audio>
+          <audio src="{{ site.statisticsUrl }}{{post.file_url | replace:'http://','' | replace:'https://',''}}" controls preload="none"></audio>
         {% endif %}
 
         {{ post.content }}

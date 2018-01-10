@@ -8,6 +8,7 @@ description: >-
   persönlich Sorge dafür, dass aus aktueller Technologie, deinem Spamfolder und
   dem neuen Film von Til Schweiger saftiges Internet wird.
 baseurl: ""
+statisticsUrl: "http://media.blubrry.com/feinkost_internet/"
 url: "http://www.feinkost-internet.de"
 
 # paginate:     1
