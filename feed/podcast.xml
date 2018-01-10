@@ -74,7 +74,7 @@ layout: null
       <content:encoded>
         <![CDATA[{{ episode.content | expand_urls: site.url | cdata_escape }}]]>
       </content:encoded>
-      <enclosure url="{{ episode.file_url }}" length="{{ episode.file_size }}" type="audio/mpeg"/>
+      <enclosure url="{{ site.statisticsUrl }}{{episode.file_url | replace:'http://','' | replace:'https://',''}}" length="{{ episode.file_size }}" type="audio/mpeg"/>
       <itunes:subtitle>
         <![CDATA[{{ episode.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
       </itunes:subtitle>
