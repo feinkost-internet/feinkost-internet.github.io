@@ -2,5 +2,6 @@ _site/
 .sass-cache/
 .jekyll-metadata
 .DS_Store
+.vscode/
 
 /_posts/*-dummy.md
