@@ -1,0 +1,8 @@
+.posts {
+  .post-image {
+    width: 50%;
+    @include small {
+      width: 100% !important;
+    }
+  }
+}
