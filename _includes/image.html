@@ -1,0 +1,4 @@
+{% capture imagePath %}/assets/img/episodes/{{ page.title | slugify }}/{{ include.name }}{% endcapture %}
+
+{% if include.caption %}<span class="post-image-caption">__{{ include.caption }}__</span>{% endif %}
+<div class="post-image" style="background-image: url({{imagePath}});"></div>
