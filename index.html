@@ -5,7 +5,7 @@ title: Feinkost Internet - Handgesprochene Podcasts, saftiges Internet direkt vo
 
 <div id="home">
   <div class="posts">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <div class="page-entry">
         <h2>
           <a href="{{ site.baseurl }}{{ post.url }}">
@@ -32,5 +32,17 @@ title: Feinkost Internet - Handgesprochene Podcasts, saftiges Internet direkt vo
         <hr>
       </div>
     {% endfor %}
+
+    <div class="pagination">
+        <span class="page_number ">Seite {{ paginator.page }} von {{ paginator.total_pages }}</span> -
+        {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="previous">Neuere Folgen</a>
+        {% endif %}
+        {% if paginator.next_page %}
+          {% if paginator.previous_page %} - {% endif %}
+          <a href="{{ paginator.next_page_path }}" class="next">Ältere Folgen</a>
+        {% endif %}
+      </div>
+
   </div>
 </div>
