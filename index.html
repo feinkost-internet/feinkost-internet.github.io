@@ -36,15 +36,11 @@ title: Feinkost Internet - Handgesprochene Podcasts, saftiges Internet direkt vo
     <div class="pagination">
         <span class="page_number ">Seite {{ paginator.page }} von {{ paginator.total_pages }}</span> -
         {% if paginator.previous_page %}
-          <a href="{{ paginator.previous_page_path }}" class="previous">Zurück</a>
-        {% else %}
-          <span class="previous">Zurück</span>
+          <a href="{{ paginator.previous_page_path }}" class="previous">Neuere Folgen</a>
         {% endif %}
-        -
         {% if paginator.next_page %}
-          <a href="{{ paginator.next_page_path }}" class="next">Weiter</a>
-        {% else %}
-          <span class="next ">Weiter</span>
+          {% if paginator.previous_page %} - {% endif %}
+          <a href="{{ paginator.next_page_path }}" class="next">Ältere Folgen</a>
         {% endif %}
       </div>
 
