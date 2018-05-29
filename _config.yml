@@ -11,7 +11,8 @@ baseurl: ""
 statisticsUrl: "http://media.blubrry.com/feinkost_internet/"
 url: "http://www.feinkost-internet.de"
 
-# paginate:     1
+paginate: 10
+paginate_path: "/:num"
 
 # About/contact
 author:
