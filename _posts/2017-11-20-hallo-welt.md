@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Äh, Hallo Welt?"
-date:   2017-11-20 18:00:00
+title: "Äh, Hallo Welt?"
+date: 2017-11-20 18:00:00
 author: "Robert"
 ---
 
