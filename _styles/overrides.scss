@@ -1,15 +1,11 @@
-.page-header {
-  background-size: cover;
-  background-position: 50% 50%;
-  background-color: $header-bg-color;
+.page-header-banner {
   padding: 0;
-  background-image: url(/assets/img/lossy-background.jpg);
   position: relative;
     @include large {
       height: 260px;
     }
 
-    .page-header-wrapper {
+    .page-header-inner {
       max-width: 64rem;
       padding: 0 6rem;
       margin: 0 auto;
@@ -94,10 +90,13 @@
   }
 }
 
-.navigation {
+.page-header {
   background-image: url(/assets/img/lossy-background.jpg);
   background-position: bottom left;
   background-size: cover;
+}
+
+.navigation {
   box-shadow: 0 0 0 #f00;
 
   .navigation-wrapper {

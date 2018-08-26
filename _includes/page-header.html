@@ -1,20 +1,22 @@
 <section class="page-header">
-  {% include subscribe-button.html %}
-  
-  <div class="page-header-wrapper">
-    <h1 class="project-name">
-        <a href="{{ site.url }}">
-          <img src="/assets/img/header-logo.png" class="hide-mobile" alt="{{ site.title }}" width="100%">
-          <img src="/assets/img/header-logo-mobile.png" class="show-mobile" alt="{{ site.title }}" width="100%">
-        </a>
-      </h1>
+  <div class="page-header-banner">
+    {% include subscribe-button.html %}
+
+    <div class="page-header-inner">
+      <h1 class="project-name">
+          <a href="{{ site.url }}">
+            <img src="/assets/img/header-logo.png" class="hide-mobile" alt="{{ site.title }}" width="100%">
+            <img src="/assets/img/header-logo-mobile.png" class="show-mobile" alt="{{ site.title }}" width="100%">
+          </a>
+        </h1>
+    </div>
   </div>
-</section>
-<section class="navigation">
-  <div class="navigation-wrapper">
-    {% for link in site.header_links %}
-      <a href="{{link.url}}">{{link.name}}</a>
-    {% endfor %}
-    <a href="https://twitter.com/internetkost" target="_blank" class="twitter"><i class="fa fa-twitter"></i> Folge uns</a>
-  </div>
+  <nav class="navigation">
+    <div class="navigation-wrapper">
+      {% for link in site.header_links %}
+        <a href="{{link.url}}">{{link.name}}</a>
+      {% endfor %}
+      <a href="https://twitter.com/internetkost" target="_blank" class="twitter"><i class="fa fa-twitter"></i> Folge uns</a>
+    </div>
+  </nav>
 </section>
