@@ -51,6 +51,28 @@ a {
   }
 }
 
+h1 {
+  text-align: left;
+
+  a, a:hover, a:active {
+    color: $header-heading-color;
+    text-decoration: none;
+  }
+}
+
+h2 {
+  a, a:hover, a:active {
+    color: $section-headings-color;
+    text-decoration: none;
+  }
+}
+
+audio {
+  width: 100%;
+  display: block;
+  margin: 20px 0;
+}
+
 .main-content {
   word-wrap: break-word;
 
@@ -223,28 +245,14 @@ a {
     background-color: $hr-border-color;
     border: 0;
   }
-}
-
-
-.main-content {
-
-  .posts {
-
-    .page-entry {
-      padding-left: 0;
-
-      h2 {
-        padding-left: 25px;
-      }
-
-    }
-  }
 
   h2 {
     font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 0.02em;
+    padding-left: 25px;
     a {
+      display: block;
       i {
         position: absolute;
         top: 5px;
@@ -258,6 +266,7 @@ a {
           transform: rotate(45deg);
         }
       }
+
       .meta {
         font-size: 12px;
         color: $body-text-color;
@@ -269,37 +278,6 @@ a {
   hr {
     margin: 25px 0;
     height: 1px;
-  }
-}
-
-h1 {
-  text-align: left;
-}
-
-h1 a, h1 a:hover, h1 a:active {
-  color: $header-heading-color;
-  text-decoration: none;
-}
-
-h2 a, h2 a:hover, h2 a:active {
-  color: $section-headings-color;
-  text-decoration: none;
-}
-
-audio {
-  width: 100%;
-  display: block;
-  margin: 20px 0;
-}
-
-
-.page-entry {
-  margin-bottom: 0;
-  padding-left: 25px;
-  position: relative;
-
-  .read-more {
-    font-size: 14px;
   }
 }
 
