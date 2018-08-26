@@ -1,8 +1,9 @@
 <section class="page-header">
-  <div class="page-header-banner">
+  <div class="banner">
+
     {% include subscribe-button.html %}
 
-    <div class="page-header-inner">
+    <div class="banner-inner">
       <h1 class="project-name">
           <a href="{{ site.url }}">
             <img src="/assets/img/header-logo.png" class="hide-mobile" alt="{{ site.title }}" width="100%">
@@ -11,8 +12,9 @@
         </h1>
     </div>
   </div>
+
   <nav class="navigation">
-    <div class="navigation-wrapper">
+    <div class="navigation-inner">
       {% for link in site.header_links %}
         <a href="{{link.url}}">{{link.name}}</a>
       {% endfor %}

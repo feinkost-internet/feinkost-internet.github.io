@@ -16,6 +16,19 @@
   }
 }
 
+.show-mobile {
+  display: none;
+  @include small {
+    display: block;
+  }
+}
+
+.hide-mobile {
+  @include small {
+    display: none;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -24,7 +37,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
   color: $body-text-color;
 }
@@ -35,102 +48,6 @@ a {
 
   &:hover {
     text-decoration: underline;
-  }
-}
-
-.btn {
-  display: inline-block;
-  margin-bottom: 1rem;
-  color: rgba(255, 255, 255, 0.7);
-  background-color: rgba(255, 255, 255, 0.08);
-  border-color: rgba(255, 255, 255, 0.2);
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 0.3rem;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
-
-  &:hover {
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-
-  + .btn {
-    margin-left: 1rem;
-  }
-
-  @include large {
-    padding: 0.75rem 1rem;
-  }
-
-  @include medium {
-    padding: 0.6rem 0.9rem;
-    font-size: 0.9rem;
-  }
-
-  @include small {
-    display: block;
-    width: 100%;
-    padding: 0.75rem;
-    font-size: 0.9rem;
-
-    + .btn {
-      margin-top: 1rem;
-      margin-left: 0;
-    }
-  }
-}
-
-.page-header-banner {
-  color: $header-heading-color;
-  text-align: center;
-
-  @include large {
-    padding: 5rem 6rem;
-  }
-
-  @include medium {
-    padding: 4rem 4rem;
-  }
-
-  @include small {
-    padding: 4rem 1rem;
-  }
-}
-
-.project-name {
-  margin-top: 0;
-  margin-bottom: 0.1rem;
-
-  @include large {
-    font-size: 3.25rem;
-  }
-
-  @include medium {
-    font-size: 2.25rem;
-  }
-
-  @include small {
-    font-size: 1.75rem;
-  }
-}
-
-.project-tagline {
-  margin-bottom: 2rem;
-  font-weight: normal;
-  opacity: 0.7;
-
-  @include large {
-    font-size: 1.25rem;
-  }
-
-  @include medium {
-    font-size: 1.15rem;
-  }
-
-  @include small {
-    font-size: 1rem;
   }
 }
 
@@ -145,17 +62,14 @@ a {
     max-width: 64rem;
     padding: 2rem 6rem;
     margin: 0 auto;
-    font-size: 1.1rem;
   }
 
   @include medium {
     padding: 2rem 4rem;
-    font-size: 1.1rem;
   }
 
   @include small {
     padding: 2rem 1rem;
-    font-size: 1rem;
   }
 
   img {
@@ -311,29 +225,81 @@ a {
   }
 }
 
-.site-footer {
-  padding-top: 2rem;
-  margin-top: 2rem;
-  border-top: solid 1px $hr-border-color;
 
-  @include large {
-    font-size: 1rem;
+.main-content {
+
+  .posts {
+
+    .page-entry {
+      padding-left: 0;
+
+      h2 {
+        padding-left: 25px;
+      }
+
+    }
   }
 
-  @include medium {
-    font-size: 1rem;
+  h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    a {
+      i {
+        position: absolute;
+        top: 5px;
+        left: 0;
+        margin-right: 5px;
+        opacity: .5;
+        width: 15px;
+        color: $body-text-color;
+
+        &.rotate-45-cw {
+          transform: rotate(45deg);
+        }
+      }
+      .meta {
+        font-size: 12px;
+        color: $body-text-color;
+        text-transform: initial;
+      }
+    }
   }
 
-  @include small {
-    font-size: 0.9rem;
+  hr {
+    margin: 25px 0;
+    height: 1px;
   }
 }
 
-.site-footer-owner {
+h1 {
+  text-align: left;
+}
+
+h1 a, h1 a:hover, h1 a:active {
+  color: $header-heading-color;
+  text-decoration: none;
+}
+
+h2 a, h2 a:hover, h2 a:active {
+  color: $section-headings-color;
+  text-decoration: none;
+}
+
+audio {
+  width: 100%;
   display: block;
-  font-weight: bold;
+  margin: 20px 0;
 }
 
-.site-footer-credits {
-  color: $blockquote-text-color;
+
+.page-entry {
+  margin-bottom: 0;
+  padding-left: 25px;
+  position: relative;
+
+  .read-more {
+    font-size: 14px;
+  }
 }
+
