@@ -47,7 +47,7 @@ for f in $(ls _posts); do
 
     # echo "2018-08-08 21:00:00+02:00" | sed 's/^\([0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]\).*/\1/'
 
-    # category
+    # layout
     if [[ "$(meta "$f" "layout")" != "post" ]]; then
       echo "[${RED}ERROR${NC}] Should have the layout post"
       episodeStatus=1
