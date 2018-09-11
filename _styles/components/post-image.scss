@@ -1,0 +1,18 @@
+.posts {
+  .post-image-caption {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .post-image {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: 50% 50%;
+    cursor: pointer;
+    @include small {
+      width: 100% !important;
+      height: 100px;
+    }
+  }
+}

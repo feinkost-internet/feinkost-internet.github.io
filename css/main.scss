@@ -2,12 +2,21 @@
 # Main css
 ---
 
-// Imports
-@import "normalize";
-@import "rouge-github";
 @import "variables";
-@import "cayman";
-@import "overrides";
 
-@import "team";
-@import "archive";
+// Vendor
+@import "ventdor/normalize";
+@import "ventdor/rouge-github";
+
+// Site structure
+@import "base";
+@import "elements/page-header";
+
+// components
+@import "components/post-image";
+@import "components/page-entry";
+@import "components/team-member";
+
+// Pages
+@import "pages/about";
+@import "pages/archive";

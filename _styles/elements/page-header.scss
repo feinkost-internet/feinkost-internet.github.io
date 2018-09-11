@@ -1,15 +1,45 @@
-.page-header {
-  background-size: cover;
-  background-position: 50% 50%;
-  background-color: $header-bg-color;
+.banner {
+  color: $header-heading-color;
+  text-align: center;
+
+  @include large {
+    padding: 5rem 6rem;
+  }
+
+  @include medium {
+    padding: 4rem 4rem;
+  }
+
+  @include small {
+    padding: 4rem 1rem;
+  }
+}
+
+.project-name {
+  margin-top: 0;
+  margin-bottom: 0.1rem;
+
+  @include large {
+    font-size: 3.25rem;
+  }
+
+  @include medium {
+    font-size: 2.25rem;
+  }
+
+  @include small {
+    font-size: 1.75rem;
+  }
+}
+
+.banner {
   padding: 0;
-  background-image: url(/assets/img/lossy-background.jpg);
   position: relative;
     @include large {
       height: 260px;
     }
 
-    .page-header-wrapper {
+    .banner-inner {
       max-width: 64rem;
       padding: 0 6rem;
       margin: 0 auto;
@@ -43,64 +73,17 @@
     }
 }
 
-.main-content {
-  font-size: 14px;
 
-  .posts {
-
-    .page-entry {
-      padding-left: 0;
-
-      h2 {
-        padding-left: 25px;
-      }
-
-    }
-  }
-
-  h2 {
-    font-size: 18px;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-    a {
-      i {
-        position: absolute;
-        top: 5px;
-        left: 0;
-        margin-right: 5px;
-        opacity: .5;
-        width: 15px;
-        color: $body-text-color;
-
-        &.rotate-45-cw {
-          transform: rotate(45deg);
-        }
-      }
-      .meta {
-        font-size: 12px;
-        color: $body-text-color;
-        text-transform: initial;
-      }
-    }
-  }
-
-
-  p {
-    font-size: 14px;
-  }
-  hr {
-    margin: 25px 0;
-    height: 1px;
-  }
-}
-
-.navigation {
+.page-header {
   background-image: url(/assets/img/lossy-background.jpg);
   background-position: bottom left;
   background-size: cover;
+}
+
+.navigation {
   box-shadow: 0 0 0 #f00;
 
-  .navigation-wrapper {
+  .navigation-inner {
     position: relative;
     max-width: 64rem;
     padding: 0 6rem;
@@ -169,26 +152,6 @@
   }
 }
 
-h1 {
-  text-align: left;
-}
-
-h1 a, h1 a:hover, h1 a:active {
-  color: $header-heading-color;
-  text-decoration: none;
-}
-
-h2 a, h2 a:hover, h2 a:active {
-  color: $section-headings-color;
-  text-decoration: none;
-}
-
-audio {
-  width: 100%;
-  display: block;
-  margin: 20px 0;
-}
-
 .podlove-subscribe-element {
   position: absolute;
   top: 20px;
@@ -213,41 +176,5 @@ audio {
     position: relative;
     margin: 5px 15px;
     float: right;
-  }
-}
-
-.page-entry {
-  margin-bottom: 0;
-  padding-left: 25px;
-  position: relative;
-
-  .read-more {
-    font-size: 14px;
-  }
-}
-
-.site-footer {
-  border-top: none;
-}
-
-.about {
-  padding: 0 0 40px 0;
-  display: block;
-  line-height: 1.7;
-}
-
-.show-mobile {
-  display: none;
-}
-
-.show-mobile {
-  @include small {
-    display: block;
-  }
-}
-
-.hide-mobile {
-  @include small {
-    display: none;
   }
 }

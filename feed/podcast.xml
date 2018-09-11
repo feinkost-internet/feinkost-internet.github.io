@@ -64,9 +64,8 @@ layout: null
       </category>
       {%- endfor %}
       <guid isPermaLink="{% if episode.podcast_guid %}false{% else %}true{% endif %}">
-        {{- site.url -}}
-        {%- if episode.podcast_guid -%}/{{- episode.podcast_guid -}}
-        {%- else -%}{{- episode.url -}}{%- endif -%}
+        {%- if episode.podcast_guid -%}{{- episode.podcast_guid -}}
+        {%- else -%}{{- site.url -}}{{- episode.url -}}{%- endif -%}
       </guid>
       <description>
         <![CDATA[{{ episode.excerpt | strip_html | truncatewords: 50 | expand_urls: site.url | cdata_escape }}]]>
