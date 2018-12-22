@@ -1,0 +1,4 @@
+- [ ] File uploaded
+- [ ] Title
+- [ ] Description
+- [ ] Publish Date
