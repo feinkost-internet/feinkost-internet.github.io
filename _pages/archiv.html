@@ -8,13 +8,13 @@ permalink: archiv.html
 
 {% for year in postsByYear %}
   <h3>{{ year.name }}</h3>
-  
+
   {% assign postsByMonth = year.items | group_by_exp:"post", "post.date  | date: '%-m'"  %}
-  
+
   {% for month in postsByMonth %}
-  
+
     <h4>{% include date-month.html month=month.name %}</h4>
-  
+
     <ul class="archive">
       {% for post in month.items %}
         <li>
@@ -24,6 +24,7 @@ permalink: archiv.html
                 {{ post.title }}
                 <p class="meta">
                   {%- include date.html date=post.date -%}
+                  {%- if post.recording_date %} | aufgenommen {% include date.html date=post.recording_date -%}{% endif -%}
                 </p>
             </div>
           </a>
