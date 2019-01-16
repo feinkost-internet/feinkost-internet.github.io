@@ -10,6 +10,7 @@
           {{ include.post.title }}
           <p class="meta">
             {%- include date.html date=include.post.date -%}
+            {%- if include.post.recording_date %} | aufgenommen {% include date.html date=include.post.recording_date -%}{% endif -%}
             {%- if include.post.author %}, geschrieben von {{ include.post.author }}{% endif -%}
           </p>
       </span>
