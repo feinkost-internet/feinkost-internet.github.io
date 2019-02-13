@@ -21,7 +21,8 @@ done
 meta() {
   cat _posts/${1} | grep "^${2}:" | head -n1 \
     | sed -e "s/^${2}:\s*\(.*\)$/\1/" \
-    | sed -e "s/[\"']$//" | sed -e "s/^[\"']//"
+    | sed -e "s/^[ ]*//" | sed -e "s/[ ]*$//" \
+    | sed -e "s/^[\"']//" | sed -e "s/[\"']$//"
 }
 
 isEpisode() {
@@ -104,7 +105,7 @@ for f in $(ls _posts); do
     if [[ "$title" = "" ]]; then
       echo -e "[${RED}ERROR${NC}] Title should not be empty"
       episodeStatus=1
-    elif ! [[ "$title" =~ ^FKI[0-9]{4}  ]]; then
+    elif ! [[ "$title" =~ ^FKI[0-9]{4} ]]; then
       echo -e "[${RED}ERROR${NC}] Title should have the format: FKI0000 Title"
       episodeStatus=1
     elif [[ "$(echo $title | grep TBD)" != "" ]]; then
