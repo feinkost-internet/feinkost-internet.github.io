@@ -48,7 +48,6 @@ layout: null
     <item>
       <title>{{ episode.title }}</title>
       <link>{{ site.url }}{{ episode.url }}</link>
-      <comments>{{ site.url }}{{ episode.url }}#comments</comments>
       <pubDate>{{ episode.date | date: "%a, %d %b %Y %T %z" }}</pubDate>
       <dc:creator>
         <![CDATA[{{ site.author.name | cdata_escape }}]]>

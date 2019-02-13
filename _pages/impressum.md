@@ -139,17 +139,6 @@ Nach gesetzlichen Vorgaben in Deutschland, erfolgt die Aufbewahrung insbesondere
 
 Nach gesetzlichen Vorgaben in Österreich erfolgt die Aufbewahrung insbesondere für 7 J gemäß § 132 Abs. 1 BAO (Buchhaltungsunterlagen, Belege/Rechnungen, Konten, Belege, Geschäftspapiere, Aufstellung der Einnahmen und Ausgaben, etc.), für 22 Jahre im Zusammenhang mit Grundstücken und für 10 Jahre bei Unterlagen im Zusammenhang mit elektronisch erbrachten Leistungen, Telekommunikations-, Rundfunk- und Fernsehleistungen, die an Nichtunternehmer in EU-Mitgliedstaaten erbracht werden und für die der Mini-One-Stop-Shop (MOSS) in Anspruch genommen wird.
 
-**DISQUS-Kommentarfunktion**
-
-Wir setzen auf Grundlage unserer berechtigten Interessen an einer effizienten, sicheren und nutzerfreundlichen Kommentarverwaltung gem. Art. 6 Abs. 1 lit. f. DSGVO den Kommentardienst DISQUS, angeboten von der DISQUS, Inc., 301 Howard St, Floor 3 San Francisco, California- 94105, USA, ein. DISQUS ist unter dem Privacy-Shield-Abkommen zertifiziert und bietet hierdurch eine Garantie, das europäische Datenschutzrecht einzuhalten: <a target="_blank" href="https://www.privacyshield.gov/participant?id=a2zt0000000TRkEAAW&amp;status=Active">https://www.privacyshield.gov/participant?id=a2zt0000000TRkEAAW&amp;status=Active</a>.
-
-
-Zur Nutzung der DISQUS Kommentarfunktion können Nutzer sich über ein eigenes DISQUS-Nutzer-Konto oder einen bestehende Social-Media-Konten (z.B. OpenID, Facebook, Twitter oder Google) anmelden. Hierbei werden die Anmeldedaten der Nutzer durch DISQUS von den Plattformen bezogen. Es ist ebenfalls möglich, die DISQUS-Kommentarfunktion als Gast, ohne Erstellung oder Verwendung Nutzerkontos bei DISQUS oder einem der angegebenen Social-Media-Anbieter, zu nutzen.
-
-
-Wir betten lediglich DISQUS mit seinen Funktionen in unsere Website ein, wobei wir auf die Kommentare der Nutzer Einfluss nehmen können. Die Nutzer treten jedoch in eine unmittelbare Vertragsbeziehung mit DISQUS, in deren Rahmen DISQUS die Kommentare der Nutzer verarbeitet und ein Ansprechpartner für etwaige Löschung der Daten der Nutzer ist. Wir verweisen hierbei auf die Datenschutzerklärung von DISQUS: <a target="_blank" href="https://help.disqus.com/terms-and-policies/disqus-privacy-policy">https://help.disqus.com/terms-and-policies/disqus-privacy-policy</a> und weisen die Nutzer ebenfalls darauf hin, dass sie davon ausgehen können, dass DISQUS neben dem Kommentarinhalt auch deren IP-Adresse und den Zeitpunkt des Kommentars speichert sowie Cookies auf den Rechnern der Nutzer speichert und zur Darstellung von Werbung nutzen kann. Nutzer können jedoch der Verarbeitung ihrer Daten zwecks Darstellung von Anzeigen widersprechen: <a target="_blank" href="https://disqus.com/data-sharing-settings/">https://disqus.com/data-sharing-settings</a>. 
-
-
 **Kommentare und Beiträge**
 
 Wenn Nutzer Kommentare oder sonstige Beiträge hinterlassen, können ihre IP-Adressen auf Grundlage unserer berechtigten Interessen im Sinne des Art. 6 Abs. 1 lit. f. DSGVO für 7 Tage gespeichert werden. Das erfolgt zu unserer Sicherheit, falls jemand in Kommentaren und Beiträgen widerrechtliche Inhalte hinterlässt (Beleidigungen, verbotene politische Propaganda, etc.). In diesem Fall können wir selbst für den Kommentar oder Beitrag belangt werden und sind daher an der Identität des Verfassers interessiert.
