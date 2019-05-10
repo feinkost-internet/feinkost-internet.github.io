@@ -75,3 +75,6 @@ defaults:
 logo: "/assets/img/logo.jpg"
 # webmaster_verifications:
 #   google: 1234
+
+future: false
+
