@@ -84,8 +84,19 @@ for f in $(ls _posts); do
     if [[ "$file_url" = "" ]]; then
       echo -e "[${RED}ERROR${NC}] file_url should not be empty"
       episodeStatus=1
-    elif [[ "$(curl -sSI $file_url | grep '200 OK')" = "" ]]; then
-      echo -e "[${RED}ERROR${NC}] File url is unreachable"
+    else
+      if [[ "$(curl -sSI $file_url | grep '200 OK')" = "" ]]; then
+        echo -e "[${RED}ERROR${NC}] File url is unreachable"
+        episodeStatus=1
+      fi
+
+      rsize="$(curl -sSI $file_url | grep '^Content-Length: ' | sed 's/^Content-Length: \([0-9]*\).*/\1/')"
+      msize="$(meta "$f" "file_size")"
+
+      if [[ "$msize" != "$rsize" ]]; then
+        echo -e "[${RED}ERROR${NC}] File size is wrong (should be '$rsize')"
+        episodeStatus=1
+      fi
     fi
 
     file_duration=$(meta "$f" "file_duration")
