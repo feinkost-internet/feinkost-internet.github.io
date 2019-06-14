@@ -1,0 +1,23 @@
+---
+layout: null
+---
+{
+  "title": "Feinkost Internet",
+  "episodes": [
+  {%- for post in site.categories.podcast -%}
+  {
+    "title": "{{ post.title }}",
+    "url": "{{site.url}}{{ post.url }}",
+    "file_url": "{{ post.file_url }}",
+    "recorded_at": "{{ post.recording_date }}",
+    "duration": "{{ post.file_duration }}",
+    "team": [
+      {%- for id in post.team -%}
+      {%- assign member = site.data.team | where: "id", id | first -%}
+      "{{ member.name }}"{%- if forloop.last != true -%}, {% endif -%}
+      {%- endfor -%}
+    ]
+  }{%- if forloop.last != true -%},{%- endif -%}
+  {%- endfor -%}
+  ]
+}

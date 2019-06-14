@@ -1,0 +1,20 @@
+---
+layout: null
+---
+ ─────────────────────────────────────────────────────────────────
+  ___    _      _          _     ___     _                    _
+ | __|__(_)_ _ | |_____ __| |_  |_ _|_ _| |_ ___ _ _ _ _  ___| |_
+ | _/ -_) | ' \| / / _ (_-<  _|  | || ' \  _/ -_) '_| ' \/ -_)  _|
+ |_|\___|_|_||_|_\_\___/__/\__| |___|_||_\__\___|_| |_||_\___|\__|
+
+ ──────────────────────────  Seit 2017  ──────────────────────────
+{% for post in site.categories.podcast %}
+{{ post.title }}
+  Link: {{site.url}}{{ post.url }}
+  File: {{ post.file_url }}
+  Team: {% for id in post.team -%}
+        {%- assign member = site.data.team | where: "id", id | first -%}
+        {{ member.name }}{%- if forloop.rindex0 > 1 -%}, {% elsif forloop.rindex0 == 1 %} and {% endif -%}
+        {%- endfor %}
+{% endfor %}
+
