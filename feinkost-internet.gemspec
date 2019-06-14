@@ -1,13 +1,13 @@
 # coding: utf-8
 
 Gem::Specification.new do |spec|
-  spec.name          = "jekyll-cayman-theme"
+  spec.name          = "feinkost-internet"
   spec.version       = "0.1.0"
-  spec.authors       = ["Pietro F. Menna"]
-  spec.email         = ["pietromenna@yahoo.com"]
+  spec.authors       = ["Josa Gesell", "Robert Beutelspacher"]
+  spec.email         = ["feinkost.internet@gmail.com"]
 
-  spec.summary       = %q{A Jekyll theme for the responsive theme for GitHub Pages http://jasonlong.github.io/cayman-theme/ }
-  spec.homepage      = "https://github.com/pietromenna/jekyll-cayman-theme"
+  spec.summary       = %q{A Jekyll theme for https://feinkost-internet.de }
+  spec.homepage      = "https://github.com/feinkost-internet/feinkost-internet.github.io"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(_layouts|_includes|_sass|LICENSE|README)/i}) }

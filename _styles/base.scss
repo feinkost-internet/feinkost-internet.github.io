@@ -228,7 +228,6 @@ audio {
     dt {
       padding: 0;
       margin-top: 1rem;
-      font-size: 1rem;
       font-weight: bold;
     }
 
@@ -279,4 +278,24 @@ audio {
     height: 1px;
   }
 }
+
+
+// TODO: Move this some where else
+.main-content dl.stats {
+  dt {
+    float: left;
+    clear: left;
+    width: 160px;
+    text-align: right;
+    font-weight: bold;
+  }
+  dt::after {
+    content: ":\0000a0";
+  }
+  dt, dd {
+    margin: 0;
+    padding: 0;
+  }
+}
+
 
