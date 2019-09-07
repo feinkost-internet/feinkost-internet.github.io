@@ -1,0 +1,15 @@
+name: Schedule
+on:
+  schedule:
+    - cron:  '*/15 * * * *'
+jobs:
+  test:
+    name: Publish master
+    runs-on: ubuntu-latest
+    steps:
+      - uses: josa42/gh-action-webhook/latest@master
+        with:
+          url: 'https://api.github.com/repos/feinkost-internet/feinkost-internet.github.io/pages/builds'
+          authorization: 'Token ${{ secrets.GITHUB_TOKEN }}'
+          accept: 'application/vnd.github.mister-fantastic-preview+json'
+
