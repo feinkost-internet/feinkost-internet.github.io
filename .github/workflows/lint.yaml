@@ -1,0 +1,9 @@
+name: 'Lint'
+on: [push]
+jobs:
+  lint:
+    name: 'Lint'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: 'actions/checkout@master'
+      - run: './bin/lint.sh'

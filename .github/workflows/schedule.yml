@@ -7,6 +7,7 @@ jobs:
     name:    'Publish master'
     runs-on: 'ubuntu-latest'
     steps:
+      - uses: 'actions/checkout@master'
       - uses: 'josa42/gh-action-webhook/latest@master'
         with:
           url:           'https://api.github.com/repos/feinkost-internet/feinkost-internet.github.io/pages/builds'
